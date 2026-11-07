@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Малювалка — Octa Technology</title>
+  <meta name="description" content="Малювалка — застосунок студії Octa Technology для Android та iOS.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/octa.css">
+</head>
+<body style="--app: var(--app-draw)">
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="../index.html" aria-label="Octa Technology"><b>Octa</b><span>Technology</span></a>
+      <nav class="main-nav" aria-label="Розділи">
+        <a href="../index.html#apps" data-i18n="nav.apps">Застосунки</a>
+        <a href="../index.html#studio" data-i18n="nav.studio">Студія</a>
+        <a href="../index.html#privacy" data-i18n="nav.privacy">Конфіденційність</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Мова / Language">
+        <button type="button" class="cut active" data-lang="ua" aria-pressed="true">UA</button>
+        <button type="button" class="cut" data-lang="sk" aria-pressed="false">SK</button>
+        <button type="button" class="cut" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Робоча назва й опис — замінити на справжні (також у lang/*.json, ключі app.drawing.*) -->
+    <section class="app-hero">
+      <div class="wrap">
+        <a class="back-link" href="../index.html#apps" data-i18n="page.back">← Усі застосунки</a>
+        <div class="app-hero-grid">
+          <div>
+            <h1 data-i18n="app.drawing.name">Малювалка</h1>
+            <p class="app-meta" data-i18n="app.drawing.cat">Творчість</p>
+            <p class="app-desc" data-i18n="app.drawing.desc">Застосунок для малювання на телефоні та планшеті.</p>
+            <ul class="platforms"><li class="cut">Android</li><li class="cut">iOS</li></ul>
+          </div>
+          <!-- Відео: assets/video/drawing.mp4 -->
+          <div class="media media-lg cut">
+            <div class="poster">
+              <span class="poster-name" data-i18n="app.drawing.name">Малювалка</span>
+              <span class="poster-note" data-i18n="apps.video">Відеоогляд</span>
+            </div>
+            <video controls muted loop playsinline preload="metadata" data-autoplay>
+              <source src="../assets/video/drawing.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="page.privacyTitle">Конфіденційність</h2>
+          <p data-i18n="page.privacyLead">Політика конфіденційності окремо для кожної платформи.</p>
+        </div>
+        <div class="doc-cards">
+          <a class="doc-card cut" href="privacy-android.html">
+            <span class="mono-label">Android · Google Play</span>
+            <strong data-i18n="page.androidDoc">Політика для Android</strong>
+            <span data-i18n="page.open">Відкрити документ →</span>
+          </a>
+          <a class="doc-card cut" href="privacy-ios.html">
+            <span class="mono-label">iOS · App Store</span>
+            <strong data-i18n="page.iosDoc">Політика для iOS</strong>
+            <span data-i18n="page.open">Відкрити документ →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="wrap contact">
+        <h2 data-i18n="page.supportTitle">Підтримка</h2>
+        <div>
+          <p class="contact-lead" data-i18n="page.supportLead">Знайшли помилку чи маєте питання щодо застосунку або своїх даних? Напишіть нам:</p>
+          <div class="email-row">
+            <a class="email" href="mailto:twomeoows@gmail.com">twomeoows@gmail.com</a>
+            <button type="button" class="btn btn-ghost cut copy-btn" data-copy="twomeoows@gmail.com" aria-describedby="copy-status" data-i18n="contact.copy">Скопіювати</button>
+            <span class="copy-status" id="copy-status" role="status"></span>
+            <span id="copied-msg" data-i18n="contact.copied" hidden>Скопійовано</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="wordmark" href="../index.html"><b>Octa</b><span>Technology</span></a>
+      <p>© 2026 Octa Technology</p>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js" data-lang-base="../lang/" data-title-key="meta.drawing"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

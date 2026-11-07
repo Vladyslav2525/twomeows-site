@@ -521,3 +521,15 @@ h3 { font-size: 19px; font-weight: 800; margin-bottom: 8px; }
   .cat, .cat.visible { animation: none; transition: opacity .3s; }
   .reveal { transition: none; opacity: 1; transform: none; }
 }
+
+/* ═══ Відеоогляд ═══ */
+.video-frame {
+  max-width: 860px;
+  margin: 24px auto 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #1d2733;
+}
+.video-frame video { display: block; width: 100%; height: auto; max-height: 80vh; }
+.footer-copy a { color: inherit; }
